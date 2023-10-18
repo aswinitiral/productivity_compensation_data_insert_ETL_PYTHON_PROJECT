@@ -6,7 +6,7 @@ df = pd.read_csv('productivity_n_hourly_compensation.csv')
 data_tuples = [tuple(row) for row in df.itertuples(index=False, name=None)]
 #establishing the connection
 conn = psycopg2.connect(
-   database="postgres", user='postgres', password='good', host='127.0.0.1', port= '5432'
+   database="postgres", user='postgres', password='aaaa', host='127.0.0.1', port= '5432'
 )
 conn.autocommit = True
 # Create a cursor and execute the SQL query
